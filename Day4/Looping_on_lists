@@ -1,0 +1,14 @@
+li=[1,2,'Rohan',3.8,'Parikh','Ankush',10,11]
+for i in range(len(li)):
+    print(li[i])
+
+li=[1,2,'Rohan',3.8,'Parikh','Ankush',10,11]
+for i in range(2,len(li)):
+    print(li[i])
+
+# Alternate Method
+for ele in li:
+    print(ele)
+
+for ele in li[2:]:
+    print(ele)
