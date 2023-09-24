@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning Elements</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: khaki;
+        margin-top: 60px;
+        height: 4000px;
+      }
+      .box {
+        border: 4px solid black;
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        display: inline-block;
+      }
+      /* #box1 {
+        position: static; /*This is the by default position of every element*/
+      #box1 {
+        position: fixed;
+        bottom: 2px;
+      }
+      #box2 {
+        position: relative; /*In this the box leaves a gap at its initial position*/
+        right: 50px;
+        top: 150px;
+      }
+      #box3 {
+        position: absolute; /*In this the box doesn't leaves a gap rather the space is occupied by the box4*/
+        right: 200px;
+        top: 250px;
+      }
+      #box4 {
+        position: sticky;
+        top: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>
