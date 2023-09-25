@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility and Z-Index</title>
+    <style>
+      .box {
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+      }
+      #box1 {
+        
+        position: relative;
+        top: 49px;
+        z-index: 35;
+        background-color: blue;
+      }
+      #box2 {
+        
+        /* visibility: hidden; (it hides the element but the gap is still visible)*/
+        /* display: none; (This hides the element as well as the gap) */
+        position: relative;
+        top: 14px;
+        /*Z-index will work only for position: relative, absolute, fixed or sticky. its not applicable for static element.*/
+        z-index: 34;
+        background-color: yellowgreen;
+        /*Higher the index number, that elements come on top of the other element*/
+      }
+      #box3 {
+        background-color: skyblue;
+      }
+      #box4 {
+        background-color: khaki;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+  </body>
+</html>
