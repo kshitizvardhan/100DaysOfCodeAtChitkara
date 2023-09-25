@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 600px;
+        width: 100%;
+        /* Initializing the display to flex */
+        display: flex;
+
+        /* ----------------------------------FLEX PROPERTIES FOR A FLEX CONTAINER------------------------------------------------------------------------- */
+
+        flex-direction: row; /* By default value is row */
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        flex-wrap: wrap; /* Used for responsiveness the boxes goes down and down when screen size reduces (Most Common) */
+
+        /* flex-wrap: wrap-reverse; /* Boxes are placed down and and are wrapped reversely */
+        /* flex-wrap: nowrap; This is the by default value of flex-wrap */
+
+        /* Shorthand Property of Flex */
+        /* flex-flow: row wrap; */
+
+        /* -----------------Justifies content in horizontal direction----------------------- */
+
+        justify-content: center; /*Flex Property for aligning items in center*/
+
+        /* justify-content: space-between; /*Flex Property for have space between only two boxes and not at the ends*/
+        /* justify-content: space-evenly; /*Flex Property for having space between boxes evenly including the both ends*/
+        /* justify-content: space-around; /*Flex Property for having space on both sides of boxes but equal spaces*/
+
+        /* ----------------------------Justifies content in vertical direction----------------------------- */
+
+        align-items: center; /* Items are vertically center aligned */
+
+        /* align-items: flex-start; This is the default value for align-items */
+        /* align-items: flex-end; Here the items get align vertically bottom of the flex container. */
+        /* align-items: stretch; During Wrap it stretches and places evenly */
+      }
+      .box {
+        background-color: tomato;
+        border: 2px solid whitesmoke;
+        margin: 10px;
+        padding: 3px;
+        height: 200px;
+        width: 200px;
+      }
+
+      #box-1 {
+        /* ----------------------------------FLEX PROPERTIES FOR A FLEX ITEM---------------------------------------------- */
+
+        /* Always do this for ar particular element i.e. ID otherwise the whole class gets targeted */
+
+        /* order: 2; /*Higher the Order, the element is shown later i.e. smaller the order, that element is shown first.*/
+
+        /* flex-grow: 2; /*Higher the number, faster the box grows when the screen size varies(Responsiveness)*/
+        flex-shrink: 2;
+      }
+      #box-2 {
+        /* flex-grow: 4; */
+        /* flex-shrink: 4; /*Higher the number, faster the box shrinks when the screen size varies(Responsiveness)*/
+
+        flex-basis: 350px;
+        /* When flex-direction is set to value 'row' the flex-basis: will control width */
+        /* When flex-direction is set to value 'column' the flex-basis: will control height */
+      }
+      #box-3{
+        /* Flex Shorthand Property-- where the first value is grow, shrink, and then basis */
+        flex: 2 2 400px;
+
+        align-self: center;
+        align-self: flex-start;
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont-1">
+      <div class="box" id="box-1">First Box</div>
+      <div class="box" id="box-2">Second Box</div>
+      <div class="box" id="box-3">Third Box</div>
+      <div class="box" id="box-4">Fourth Box</div>
+      <div class="box" id="box-5">Fifth Box</div>
+      <div class="box" id="box-6">Sixth Box</div>
+    </div>
+  </body>
+</html>
