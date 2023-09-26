@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Radial Gradients</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: khaki;
+        width: 60%;
+        height: 600px;
+        margin: 5px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        border: 2px solid black;
+        width: 150px;
+        height: 100px;
+        padding: 25px;
+        border-radius: 40px;
+      }
+      #box-1 {
+        background-image: radial-gradient(
+          red,
+          rgb(195, 237, 9),
+          rgb(31, 246, 7)
+        );
+      }
+      #box-2 {
+        background-image: radial-gradient(
+          rgb(140, 9, 9),
+          rgb(205, 236, 5),
+          rgb(39, 255, 1)
+        );
+        position: relative;
+        top: 100px;
+      }
+      #box-3 {
+        background-image: radial-gradient(red, yellow, rgb(9, 246, 13));
+      }
+      #box-4 {
+        background-image: conic-gradient( red 45deg, green 90deg, yellow 10deg);
+        position: relative;
+        top: 170px;
+        right: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">First Box</div>
+      <div class="box" id="box-2">Second Box</div>
+      <div class="box" id="box-3">Third Box</div>
+      <div class="box" id="box-4">Fourth Box</div>
+    </div>
+  </body>
+</html>
