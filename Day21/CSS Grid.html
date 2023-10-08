@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grids</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        background-color: khaki;
+        display: grid;
+        height: 700px;
+        /*grid-template-rows: 133px 133px 133px;
+            grid-template-columns: 133px 133px 133px;*/
+        /*grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);*/
+        grid-template-rows: 43px 1fr 43px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 12px;
+        column-gap: 12px;
+      }
+      .grid {
+        background-color: yellowgreen;
+        /*height: 122px;
+            width: 122px;*/
+      }
+      #grid-1 {
+        grid-column-start: 1;
+        grid-column-end: 4; /*We, can say them line number: like from line 1 to line 3; span the element. */
+        background-color: chocolate;
+        text-align: center;
+      }
+      #grid-5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: chocolate;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid" id="grid-1">This is Header</div>
+      <div class="grid" id="grid-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        praesentium provident mollitia laborum? Nisi soluta sunt rem neque.
+        Libero saepe quo optio non beatae facere dolore, ut harum officiis
+        doloremque aut velit fuga, sapiente dolores repudiandae neque, mollitia
+        a ipsum minima? Nihil accusamus ad modi consequatur perspiciatis
+        reiciendis minus nemo? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aspernatur quis impedit, nobis consectetur veniam,
+        soluta sit aliquam, quia magnam sed eius officia. Culpa ab, quo quisquam
+        libero velit voluptates autem consequuntur aliquid debitis quae dolorem
+        ut quas reprehenderit vero, ipsa tempora quis atque deleniti consequatur
+        distinctio placeat corrupti? Quae sapiente assumenda commodi est. Non
+        obcaecati vel mollitia suscipit dolores dolore voluptates cumque libero
+        necessitatibus veniam. Aliquid illo vel corrupti cupiditate rerum?
+        Voluptates facere, saepe nostrum ratione assumenda earum explicabo quos
+        vitae atque iure praesentium blanditiis debitis obcaecati repellendus
+        aliquid quam aliquam quod! Accusantium repellat sequi deserunt
+        blanditiis accusamus provident dicta quae? Facere, laboriosam delectus
+        placeat laborum obcaecati asperiores quo eum, iure ratione
+        exercitationem nulla in, sunt repudiandae enim distinctio autem nobis!
+        Sit mollitia eligendi esse quisquam repellendus officiis rerum nobis
+        quaerat, quo voluptate perspiciatis harum doloribus incidunt eius porro
+        beatae nisi unde laudantium suscipit veniam! Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Ab sit dolorem, blanditiis, nulla
+        consequatur perferendis possimus ducimus quaerat labore voluptatibus
+        laborum exercitationem asperiores, culpa quisquam! Suscipit impedit
+        similique at! Non blanditiis minima laudantium accusantium, labore
+        aspernatur ut cupiditate quis, deleniti exercitationem doloribus sed aut
+        mollitia. Voluptate alias dolores quibusdam atque tempore quod magni
+        quis, reprehenderit, ratione earum deserunt. Illum dolorum similique hic
+        illo soluta, quas numquam totam aperiam, non accusantium veritatis,
+        velit veniam repudiandae eveniet quidem commodi. Velit numquam aliquam
+        ipsum sunt voluptates enim nostrum voluptatem aperiam, nemo, molestiae
+        ea nobis, quidem blanditiis! Alias aliquid aut incidunt, libero eligendi
+        repudiandae unde quod beatae, quaerat vero reprehenderit perferendis
+        quis quos nam eum.
+      </div>
+      <div class="grid" id="grid-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        praesentium provident mollitia laborum? Nisi soluta sunt rem neque.
+        Libero saepe quo optio non beatae facere dolore, ut harum officiis
+        doloremque aut velit fuga, sapiente dolores repudiandae neque, mollitia
+        a ipsum minima? Nihil accusamus ad modi consequatur perspiciatis
+        reiciendis minus nemo? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aspernatur quis impedit, nobis consectetur veniam,
+        soluta sit aliquam, quia magnam sed eius officia. Culpa ab, quo quisquam
+        libero velit voluptates autem consequuntur aliquid debitis quae dolorem
+        ut quas reprehenderit vero, ipsa tempora quis atque deleniti consequatur
+        distinctio placeat corrupti? Quae sapiente assumenda commodi est. Non
+        obcaecati vel mollitia suscipit dolores dolore voluptates cumque libero
+        necessitatibus veniam. Aliquid illo vel corrupti cupiditate rerum?
+        Voluptates facere, saepe nostrum ratione assumenda earum explicabo quos
+        vitae atque iure praesentium blanditiis debitis obcaecati repellendus
+        aliquid quam aliquam quod! Accusantium repellat sequi deserunt
+        blanditiis accusamus provident dicta quae? Facere, laboriosam delectus
+        placeat laborum obcaecati asperiores quo eum, iure ratione
+        exercitationem nulla in, sunt repudiandae enim distinctio autem nobis!
+        Sit mollitia eligendi esse quisquam repellendus officiis rerum nobis
+        quaerat, quo voluptate perspiciatis harum doloribus incidunt eius porro
+        beatae nisi unde laudantium suscipit veniam! Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Ab sit dolorem, blanditiis, nulla
+        consequatur perferendis possimus ducimus quaerat labore voluptatibus
+        laborum exercitationem asperiores, culpa quisquam! Suscipit impedit
+        similique at! Non blanditiis minima laudantium accusantium, labore
+        aspernatur ut cupiditate quis, deleniti exercitationem doloribus sed aut
+        mollitia. Voluptate alias dolores quibusdam atque tempore quod magni
+        quis, reprehenderit, ratione earum deserunt. Illum dolorum similique hic
+        illo soluta, quas numquam totam aperiam, non accusantium veritatis,
+        velit veniam repudiandae eveniet quidem commodi. Velit numquam aliquam
+        ipsum sunt voluptates enim nostrum voluptatem aperiam, nemo, molestiae
+        ea nobis, quidem blanditiis! Alias aliquid aut incidunt, libero eligendi
+        repudiandae unde quod beatae, quaerat vero reprehenderit perferendis
+        quis quos nam eum.
+      </div>
+      <div class="grid" id="grid-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        praesentium provident mollitia laborum? Nisi soluta sunt rem neque.
+        Libero saepe quo optio non beatae facere dolore, ut harum officiis
+        doloremque aut velit fuga, sapiente dolores repudiandae neque, mollitia
+        a ipsum minima? Nihil accusamus ad modi consequatur perspiciatis
+        reiciendis minus nemo? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aspernatur quis impedit, nobis consectetur veniam,
+        soluta sit aliquam, quia magnam sed eius officia. Culpa ab, quo quisquam
+        libero velit voluptates autem consequuntur aliquid debitis quae dolorem
+        ut quas reprehenderit vero, ipsa tempora quis atque deleniti consequatur
+        distinctio placeat corrupti? Quae sapiente assumenda commodi est. Non
+        obcaecati vel mollitia suscipit dolores dolore voluptates cumque libero
+        necessitatibus veniam. Aliquid illo vel corrupti cupiditate rerum?
+        Voluptates facere, saepe nostrum ratione assumenda earum explicabo quos
+        vitae atque iure praesentium blanditiis debitis obcaecati repellendus
+        aliquid quam aliquam quod! Accusantium repellat sequi deserunt
+        blanditiis accusamus provident dicta quae? Facere, laboriosam delectus
+        placeat laborum obcaecati asperiores quo eum, iure ratione
+        exercitationem nulla in, sunt repudiandae enim distinctio autem nobis!
+        Sit mollitia eligendi esse quisquam repellendus officiis rerum nobis
+        quaerat, quo voluptate perspiciatis harum doloribus incidunt eius porro
+        beatae nisi unde laudantium suscipit veniam! Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Ab sit dolorem, blanditiis, nulla
+        consequatur perferendis possimus ducimus quaerat labore voluptatibus
+        laborum exercitationem asperiores, culpa quisquam! Suscipit impedit
+        similique at! Non blanditiis minima laudantium accusantium, labore
+        aspernatur ut cupiditate quis, deleniti exercitationem doloribus sed aut
+        mollitia. Voluptate alias dolores quibusdam atque tempore quod magni
+        quis, reprehenderit, ratione earum deserunt. Illum dolorum similique hic
+        illo soluta, quas numquam totam aperiam, non accusantium veritatis,
+        velit veniam repudiandae eveniet quidem commodi. Velit numquam aliquam
+        ipsum sunt voluptates enim nostrum voluptatem aperiam, nemo, molestiae
+        ea nobis, quidem blanditiis! Alias aliquid aut incidunt, libero eligendi
+        repudiandae unde quod beatae, quaerat vero reprehenderit perferendis
+        quis quos nam eum.
+      </div>
+      <div class="grid" id="grid-5">Footer</div>
+    </div>
+  </body>
+</html>
