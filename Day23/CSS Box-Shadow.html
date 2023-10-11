@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Shadows</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 300px;
+        }
+        .container{
+            background-color: khaki;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: yellowgreen;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 10px 15px 50px 0px rgba(237, 250, 6, 0.649);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          incidunt, obcaecati, excepturi itaque voluptatum suscipit, maiores
+          quidem enim quia corrupti veniam modi dolor officia ipsa?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
