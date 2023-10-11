@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations | CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .container {
+        background-color: khaki;
+        border: 8px solid black;
+        height: 100vh;
+        width: 207vh;
+      }
+      .box {
+        width: 350px;
+        height: 80px;
+        background-color: red;
+        border: 5px solid white;
+        border-radius: 12px;
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-direction: alternate;
+        /* animation-fill-mode: forwards; */
+      }
+      @keyframes rightMovement {
+        from {
+          top: 0px;
+          left: 0px;
+        }
+
+        to {
+          top: 0px;
+          left: 1200px;
+        }
+      }
+      .box2 {
+        width: 350px;
+        height: 80px;
+        background-color: red;
+        border: 5px solid white;
+        border-radius: 12px;
+        position: relative;
+        animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1) 2s infinite alternate
+          none running leftMovement;
+      }
+      @keyframes leftMovement {
+        from {
+          top: 300px;
+          left: 1200px;
+        }
+        to {
+          top: 300px;
+          left: 0px;
+        }
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 5px solid white;
+        border-radius: 12px;
+        position: relative;
+        animation: 10s linear 0s infinite alternate none running circleMovement;
+      }
+      @keyframes circleMovement {
+            0%{
+              top: 1%;
+              left: 5%;
+            }
+            30%{
+                top: 1%;
+              left: 70%;
+            }
+            60%{
+                top: 50%;
+              left: 30%;
+            }
+            100%{
+                top: 60%;
+              left: 90%;
+            }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="circle"></div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>
