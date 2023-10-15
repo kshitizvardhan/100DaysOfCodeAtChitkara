@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: white;
+        height: 650px;
+        width: 400px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+      .card img {
+        height: 30%;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 75%;
+        text-align: center;
+      }
+      .plans {
+        width: 80%;
+        height: 15%;
+        background-color: #fbab7e;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        align-items: center;
+        border-radius: 20px;
+      }
+      .plans .leftbox{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+        padding: 10px;
+
+     }
+     .plans .leftbox .imgbox {
+         width: fit-content;
+         height: fit-content;
+         
+     }
+     .plans .leftbox .imgbox img{
+        border-radius: 20px;
+     }
+     .plans .leftbox .planbox{
+         width: 40%;
+         padding-left: 20px;
+         color: rgb(255, 255, 255);
+     }
+     .plans .rightbox {
+        width: 40%;
+     }
+     .plans .rightbox a{
+        text-decoration: none;
+        color: inherit;
+        padding-left: 40px;
+        font-size: 1rem;
+        transition: all 1s;
+        letter-spacing: 2px;
+     }
+     .plans .rightbox a:hover{
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+     }
+
+
+     button {
+        width: 80%;
+        height: 9%;
+        background-color: #fbac7e9d;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px #000000;
+        cursor: pointer;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        transition: all 1s;
+      }
+      button:hover{
+        background-color: #fbab7e;
+        color: white;
+        font-weight: bold;
+
+      }
+      .cancel a{
+        color: rgb(73, 71, 71);
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="fintech-payment-aggregators.jpeg" alt="image" />
+        <div class="textbox">
+          <h2>Order Summary</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor quos
+            ullam expedita est praesentium aperiam?Lorem
+          </p>
+        </div>
+        <div class="plans">
+          <div class="leftbox">
+            <div class="imgbox"> <img src="good_times_with_bad_music_1050x700.webp" alt=""></div>
+            <div class="planbox"> <p>Amount</p> <p>$99.9/year</p></div>
+          </div>
+          <div class="rightbox"> <a href="#">Change</a></div>
+        </div>
+        <button>Proceed to Payment</button>
+        <div class="cancel"> <a href="#"> Cancel Order</a></div>
+      </div>
+    </div>
+  </body>
+</html>
