@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms | CSS</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        #RotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #RotateY:hover{
+            transform: rotateY(45deg);
+        }
+        #RotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+        #TranslateX:hover{
+            transform: translateX(100px);
+        }
+        #TranslateY:hover{
+            transform: translateY(100px);
+        }
+        #TranslateZ:hover{
+            transform: perspective(300px) translateZ(100px);
+        }
+        #SkewX:hover{
+            transform: skewX(45deg);
+        }
+        #SkewY:hover{
+            transform: skewY(45deg);
+        }
+        #SkewZ:hover{
+            transform: perspective(90deg) skewZ(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">TranslateZ</div>
+        <div class="item" id="SkewX">SkewX</div>
+        <div class="item" id="SkewY">SkewY</div>
+        <div class="item" id="SkewZ">SkewZ</div>
+    </div>
+</body>
+</html>
