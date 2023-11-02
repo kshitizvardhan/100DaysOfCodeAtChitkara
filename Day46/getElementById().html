@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Button</title>
+    <style>
+        body{
+            margin: 40px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .imgtest img{
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Click to display date and time</button>
+    <p id="demo">Hello</p>
+    <button onclick="document.getElementById('demo').innerHTML='Hello, this is Javascript!'">Click to change text</button>
+    <button onclick="document.getElementById('demo').style.fontSize='7rem'">Click to change text size</button>
+    <button onclick="document.getElementById('demo').style.display='none'">Click to change display to hidden</button>
+    <button onclick="document.getElementById('demo').style.display='block'">Click to change display to block</button>
+    <div class="imgtest"> 
+        <img id="demo2" src="demoimg.jpg" alt="demo img">
+    </div>
+    <button onclick="document.getElementById('demo2').src='demo2img.jpg'" o>Click to new image</button>
+</body>
+</html>
