@@ -2,10 +2,10 @@
 t=int(input())
 for i in range(t):
     n,m=map(int,input().split())
-    n=n-(n*10)//100
-    if n==m:
-        print("EITHER")
-    elif n>m:
-        print("DINING")
-    elif n<m:
+    z = n-n*0.1
+    if(z < m):
         print("ONLINE")
+    elif(z > m):
+        print("DINING")
+    else:
+        print("EITHER")
