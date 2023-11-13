@@ -11,7 +11,8 @@ function fizzBuzz() {
         } else{
             output.push(count)
       }
+      count++  
     }   
-    count++
+    
     console.log(output) 
 }
