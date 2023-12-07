@@ -1,0 +1,25 @@
+# About Open Source:
+- Open source refers to something people can modify and share, which is publicly accessible.
+
+# About Open Source Software:
+- Open Source Software is a software with the source code, which anyone can modify, inspect and change.
+
+# Difference between open source software and other types of software:
+- In open source software, the author make the source code available to others who would like to view, modify, enhance the existing code.
+It promote collaboration and sharing because, they permit other people to make modifications to source code and incorporate those changes into their own projects.
+
+- Some software has source code that only the person, team, or organization who created it, and maintains exclusive control over it and can modify. People call this kind of software "proprietary" or "closed source" software.
+
+# Remote/Cloud Computing
+- Online word processing, email management, and image editing software that they don't install and run on their personal computers. Instead, they simply access these programs on remote computers by using a Web browser or mobile phone application. When we do this, it is called "remote computing." It is also called as cloud computing.
+
+# How it works & about liscences
+-Open source code is usually stored in a public repository and shared publicly. OSS usually comes with a distribution license. This license includes terms that define how developers can use, study, modify, and most importantly, distribute the software. five of the most popular licenses are:
+
+MIT License
+GNU General Public License (GPL) 2.0—this is more restrictive and requires that copies of modified code are made available for public use
+Apache License 2.0
+GNU General Public License (GPL) 3.0
+BSD License 2.0 (3-clause, New or Revised)—this is less restrictiveiv
+
+-When source code is changed, OSS must include what was altered as well as the methods involved. Depending on the license terms, the software resulting from these modifications may or may not be required to be made available for free.

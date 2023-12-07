@@ -1,9 +1,0 @@
-# About Open Source
-Open source refers to something people can modify and share, which is publicly accessible.
-
-# About Open Source Software
-Open Source Software is a software with the source code, which anyone can modify, inspect and change.
-
-# Difference between open source software and other types of software
-In open source software, the author make the source code available to others who would like to view, modify, enhance the existing code.
-It promote collaboration and sharing because, they permit other people to make modifications to source code and incorporate those changes into their own projects.
